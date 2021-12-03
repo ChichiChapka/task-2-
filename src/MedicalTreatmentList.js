@@ -6,9 +6,9 @@ function Treatments (props) {
   const items = JSON.parse(treatmentRecords);
 
   const listTreatments = items.map((item)=> (
-    <li>
-      key={item.id}, {item.name}
-    </li>
+    <ul>
+      treatment {item.id}, {item.name}
+    </ul>
   ));
 
   return (

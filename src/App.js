@@ -19,7 +19,7 @@ export default function App() {
     <ul> Filtered records:
       { 
        jsonRecords
-        .filter(jsonRecord => jsonRecord.name === 'Apple2')
+        .filter(jsonRecord => jsonRecord.id === 'p24')
         .map(filteredJsonRecord => (
         <tr> 
           <td>{filteredJsonRecord.id}</td>
