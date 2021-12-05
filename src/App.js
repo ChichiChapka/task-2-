@@ -18,7 +18,8 @@ export default function App() {
       
     </div>
  
-  );
+  )
+  
 
   return (
     <ul> Filtered records:
