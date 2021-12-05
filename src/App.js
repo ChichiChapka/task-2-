@@ -1,8 +1,14 @@
 //App.js
 import React from "react";
 import Treatments from "./MedicalTreatmentList";
+import MedicalTreatmentPanel from "./MedicalTreatmentPanel";
+
+
+
 
 export default function App() {
+
+
 
   const jsonRecords =[
     {id:'p24', name:'Apple2'},
@@ -10,15 +16,19 @@ export default function App() {
   ];
   
   const recordsText = JSON.stringify (jsonRecords);
- 
+
+
   return (
     <div>
+       
       <Treatments treatmentsJson = {recordsText} />
-      <input placeholder= 'Some value' value={jsonRecords.id} onChange = {e => setjsonRecordsid(e.targetvalue)} /> 
       
+     
     </div>
- 
   );
+
+ 
+
 
 
   return (
