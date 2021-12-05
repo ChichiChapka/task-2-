@@ -8,11 +8,16 @@ export default function App() {
     {id:'p24', name:'Apple2'},
      {id:'d67', name: 'ball'},
   ];
+  
   const recordsText = JSON.stringify (jsonRecords);
+ 
   return (
     <div>
       <Treatments treatmentsJson = {recordsText} />
+      <input placeholder= 'Some value' value={jsonRecords.id} onChange = {e => setjsonRecordsid(e.targetvalue)} /> 
+      
     </div>
+ 
   );
 
   return (
